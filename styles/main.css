@@ -14,7 +14,10 @@
      padding: 0.5rem;
      background-color: rgba(101,18,95,0.5);
      z-index: 1;
+ 
  }
+ 
+ .links-containger .navbar-link:hover { background-color : white }
  
  .navbar .logo {
      position: relative; /* positioning will be explained in a resource */
