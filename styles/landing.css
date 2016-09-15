@@ -37,8 +37,6 @@ body.landing {
      position: relative;
      padding: 2rem;
      text-align: center;
-<<<<<<< HEAD
-=======
          opacity: 0;
      -webkit-transform: scaleX(0.9) translateY(3rem);
      -moz-transform: scaleX(0.9) translateY(3rem);
@@ -50,7 +48,6 @@ body.landing {
      -moz-transition-delay: 0.2s;
      transition-delay: 0.2s;
 
->>>>>>> checkpoint#5
  }
  
  .point .point-title {
