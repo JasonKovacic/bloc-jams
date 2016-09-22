@@ -33,7 +33,7 @@ var albumBeatles = {
      artist: 'The Beatles',
      label: 'Apple Records',
      year: '1968',
-     albumArtUrl: 'assets/images/album_covers/03.png.png',
+     albumArtUrl: 'assets/images/album_covers/03.png',
      songs: [
          { title: 'Back in the U.S.S.R.', duration: '2:43' },
          { title: 'Don\'t Pass Me By', duration: '3:51' },
@@ -61,9 +61,14 @@ var albumReleaseInfo = document.getElementsByClassName('album-view-release-info'
 var albumImage = document.getElementsByClassName('album-cover-art')[0];
 var albumSongList = document.getElementsByClassName('album-view-song-list')[0];
 
-var setCurrentAlbum = function(album) {
+
+ var setCurrentAlbum = function(album) {
      // #1
-  
+     var albumTitle = document.getElementsByClassName('album-view-title')[0];
+     var albumArtist = document.getElementsByClassName('album-view-artist')[0];
+     var albumReleaseInfo = document.getElementsByClassName('album-view-release-info')[0];
+     var albumImage = document.getElementsByClassName('album-cover-art')[0];
+     var albumSongList = document.getElementsByClassName('album-view-song-list')[0];
  
      // #2
      albumTitle.firstChild.nodeValue = album.title;
@@ -82,16 +87,20 @@ var setCurrentAlbum = function(album) {
  
  window.onload = function() {
      setCurrentAlbum(albumPicasso);
+ };
+ window.onload = function() {
+     setCurrentAlbum(albumPicasso);
      
-     var albums = [albumPicasso, albumMarconi albumBeatles];
+var albums = [albumPicasso, albumMarconi, albumBeatles];
      var index = 1;
      
      albumImage.addEventListener("click", function(event) {
+         var album = albums[index];
          setCurrentAlbum(album);
          index++;
-         if index == albums.length {
+         if (index == albums.length) {
              index = 0;
          }
      });
-     }
- };
+};
+ 
