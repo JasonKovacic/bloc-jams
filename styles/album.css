@@ -4,6 +4,8 @@
      background-attachment: fixed;
      background-position: center center;
      background-size: cover;
+    padding-bottom: 200px;
+
  }
  
  .album-cover-art {
@@ -103,4 +105,14 @@
          width: 80%;
          margin: auto;
      }
+ }
+
+oc/bloc-jams/styles/album.css
+ body.album {
+     background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center center;
+     background-size: cover;
+     padding-bottom: 200px;
  }
