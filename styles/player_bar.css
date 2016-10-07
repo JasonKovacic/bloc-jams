@@ -110,20 +110,21 @@
  }
  
  .seek-bar .thumb {
-     position: absolute;
-     height: 0.5rem;
-     width: 0.5rem;
-     background-color: white;
-     left: 36%;
-     top: 50%;
-     /* #1 */
-     margin-left: -0.25rem;
-     margin-top: -0.25rem;
-     border-radius: 50%;
-     cursor: pointer;
-     -webkit-transition: all 100ms ease-in-out;
-        -moz-transition: all 100ms ease-in-out;
-             transition: all 100ms ease-in-out;
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: white;
+    left: 36%;
+    top: 50%;
+    /* #1 */
+    margin-left: -0.25rem;
+    margin-top: -0.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: width 100ms ease-in-out,
+                 height 100ms ease-in-out,
+                 margin-top 100ms ease-in-out,
+                 margin-left 100ms ease-in-out;
  }
  
  .seek-bar:hover .thumb {
